@@ -1,4 +1,3 @@
-# prompts.py
 
 SUMMARY_PROMPT = """
 You are a product copywriter.
@@ -11,7 +10,7 @@ Summarize the following product page content in an enthusiastic, Gen Z-friendly 
 CRITIQUE_PROMPT = """
 You are an expert UX/product reviewer.
 
-Read the following product page content and identify 3–5 things that are unclear, missing, or could confuse potential buyers:
+Read the following product page content and identify 3-5 things that are unclear, missing, or could confuse potential buyers:
 
 {content}
 """

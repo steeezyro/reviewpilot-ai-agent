@@ -1,5 +1,3 @@
-# scraper.py
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -13,11 +11,11 @@ def scrape_product_page(url):
 
         soup = BeautifulSoup(res.text, 'html.parser')
 
-        # Try to extract the product title
+        # Extract the product title
         title = soup.find('h1')
         title_text = title.get_text(strip=True) if title else "No title found"
 
-        # Try to get visible text from all <p> tags
+        # Get visible text from all <p> tags
         paragraphs = soup.find_all('p')
         paragraph_text = "\n".join(p.get_text(strip=True) for p in paragraphs)
 
